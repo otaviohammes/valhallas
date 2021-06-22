@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+.image {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: top;
+  text-transform: uppercase;
+
+
+  /* imagem de fundo */
+  background-image: url('https://cdn.pixabay.com/photo/2017/12/06/11/03/brazil-3001462_960_720.png');
+  	background-position:center;
+
+
+  /* agora colocamos o fundo gradiente dentro do texto com essa propriedade */
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  /* a cor do texto deve estar como transparent */
+  color: transparent;
+}
+
+ .image::selection,
+ .gradient::selection {
+    color: #fff;
+    background: #8406d6
+  }
+
+div.box {
+	width: 350px;
+	display: inline-block;
+	background-color: #191f2d;
+	background-position: center;
+ 	 padding: 20px;
+}
+
+body {
+  margin: 0;
+  background-image: url("http://pavbca.com/walldb/original/5/7/d/190136.jpg");
+   background-position: top;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+
+
+}
+.background {
+background-image:url("https://www.pixel4k.com/wp-content/uploads/2018/10/vikings-raven-4k_1540754969.jpg");
+background-position: center;
+background-size: 100%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+.div-filho {
+  opacity:1
+
+}
+
+/* Header/Blog Title */
+.header {
+  background-color:;
+  padding: 15px;
+  text-align: center;
+  background-image: url("https://i.imgur.com/HQUICUZ.png");
+   background-position: top;
+   background-size: 550px 425px;
+   background-repeat: no-repeat;
+
+
+}
+.header h2 {
+  text-shadow: 1px 1px red;
+  font-size:30px;
+}
+
+.header h1 {
+  font-size: 70px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+
+  background-color: #191f2d;
+
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 20%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 23%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #ddd;
+ width: 90%;
+  padding: 10px;
+   text-align:center;
+}
+.colunas {
+    background-image: linear-gradient(to bottom, #1e2033, #1e2940, #213a59);
+   width: 100%;
+    padding: 10px;
+     text-align:center;
+}
+.fakeimg1 {
+background-image:url("https://i.pinimg.com/originals/93/c7/ee/93c7eef1f3eaa2e5e4f7010afa71469f.png");
+ width: 100%;
+  padding: 20px;
+   text-align:center;
+  background-position:midle;
+   background-size: 100%;
+   background-repeat: no-repeat;
+}
+
+/* Add a card effect for articles */
+.card {
+  padding: 10px;
+  margin-top: 21px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  opacity:1;
+}
+.final {
+  background-color: transparent;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  overflow: hidden;
+  background-color: #191f2d;
+
+   background-size: 50%;
+   background-repeat: no-repeat;
+
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #191f2d;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+
+input[type=text] {
+  width: 15%;
+  position: center;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("https://img.icons8.com/pastel-glyph/2x/search--v2.pn");
+  background-position: top;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+   background-size: 12%;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 20%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 55%;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+
+  }
+}
+.gradiente {
+    background-color: transparent;
+    background-image:  linear-gradient( to right, red, transparent, blue ), url("https://i.pinimg.com/originals/cf/ee/34/cfee34cad7bcdf6c5345bb7a21d8b5df.jpg") center repeat-x;
+}
+p {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+  <div class='header'>
+  <h1 class="image" >.</h1>
+    <h2 style="font-size:20px; font-weight: bold";>.</h2>
+  </div>
+
+<ul>
+  <li><a href="file:///C:/Users/hamme/Desktop/teste.html#home"><b>Home</a></b></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"><b>Social</a></b>
+    <div class="dropdown-content">
+      <a href="http://localhost/valhallas/index.php" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/1024px-Facebook_icon.svg.png" width="15" height="15"> <b>Facebook</a></b>
+      <a href="https://www.instagram.com/valhallas.elite.brasil" target="_blank"><img src="https://image.flaticon.com/icons/png/512/174/174855.png" width="15" height="15"> <b>Instagram</a></b>
+      <a href="https://steamcommunity.com/groups/valhallaselitebr" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Steam_Logo.png" width="15" height="15"> <b>Grupo Steam</a></b>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn"><b>Lobby</a></b>
+        <div class="dropdown-content">
+          <a href="file:///C:/Users/hamme/Desktop/lobbycsgo.html" target="_blank"><img src="https://www.freeiconspng.com/thumbs/csgo-icon/csgo-icon-4.png" width="20" height="20"> <b>CS-GO</a></b>
+          <a href="file:///C:/Users/hamme/Desktop/lobbycodwarzone.html" target="_blank"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/46b63d3c-ae67-464c-9a37-670829b2a157/ddw4eh3-e0ab2682-a822-4da9-b860-ce9cd4b8587b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQ2YjYzZDNjLWFlNjctNDY0Yy05YTM3LTY3MDgyOWIyYTE1N1wvZGR3NGVoMy1lMGFiMjY4Mi1hODIyLTRkYTktYjg2MC1jZTljZDRiODU4N2IucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Jyk51UDMLch0Tpi9Rs3mlna7mtYgAkuLYBkCcYNYaM0" width="20" height="20"> <b>COD Warzone</a></b>
+          <a href="file:///C:/Users/hamme/Desktop/lobbypubg.html" target="_blank"><img src="https://xpic5.igvimg.com/group_c/1912/1407/542/edd02903-2f37-4819-9b34-fc799472ac25.png" width="20" height="20"> <b>PUBG</a></b>
+<a href="file:///C:/Users/hamme/Desktop/lobbyclasroyalle.html" target="_blank"><img src="https://pngimage.net/wp-content/uploads/2018/06/logo-do-clash-royale-png-6.png" width="20" height="20"> <b>Clash Royale</a></b>
+<a href="file:///C:/Users/hamme/Desktop/lobbydestiny2.html" target="_blank"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8a37d87d-a6e5-4ad9-9c67-02a8842ca36b/dbpr9n8-773872ad-74cc-4124-8458-dbce41771acd.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhhMzdkODdkLWE2ZTUtNGFkOS05YzY3LTAyYTg4NDJjYTM2YlwvZGJwcjluOC03NzM4NzJhZC03NGNjLTQxMjQtODQ1OC1kYmNlNDE3NzFhY2QucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.buio3jN2Pjp-jjp31zShN7QDmtw9aZRq6yJtrwWPdSk" width="20" height="20"> <b>Destiny 2</a></b>
+      <li style="float:right;"> <a href="http://localhost/valhallas/index.php"><img src="https://www.atom.org.br/wp-content/uploads/2020/01/login-icons-png-4.png" width="15" height="15">  <b>login</a></b></li>
+      <li> <a href="file:///C:/Users/hamme/Desktop/Loja.html">  <b>loja</a></b></li>
+        <input style="float:right" type="text" name="Buscar" placeholder="Buscar...">
+    </div>
+  </li>
+</ul>
+</div>
+<div class="background">
+<div class="row">
+  <div class="leftcolumn">
+      <img src="https://araucarianoar.com.br/wp-content/uploads/2015/11/Banner-vertical-gif.gif" width="200" height="800">
+      <img src="https://araucarianoar.com.br/wp-content/uploads/2015/11/Banner-vertical-gif.gif" width="200" height="800">
+ </div>
+  <div class="column middle">
+     <div class="colunas">
+    <div class="card">
+     <h1 style="text-align: center; text-family: Arial; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;color:white">Valhalla's Nos E-Sports</h1>
+      <h4 style="color:white;text-shadow: 1px 1px 2px black";>Atualmente atuamos em diversos games com nosso clã ativo, procure pela organização nos seguintes jogos: </h4>
+	 <div >
+     <table>
+       <tr>
+         <td><a href="https://steamcommunity.com/app/730" target="_blank"><img src="https://coffops.com/wp-content/uploads/2021/05/csgo.png" width="100" height="100"> </td>
+           <td><h3 style="color:white;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Counter-Strike Global Offensive<br>
+          <p style="font-size:14px;font-weight: normal"> Counter-Strike: Global Offensive (CS: GO) expandirá na jogabilidade de ação baseada em equipes na qual foi pioneiro quando foi lançado há 12 anos.</a></p></h3></td>
+         </tr>
+       </table>
+       <table>
+         <tr>
+           <td><a href="https://store.steampowered.com/app/1085660/Destiny_2/" target="_blank"><img src="https://cdn.vox-cdn.com/thumbor/Ce2hdWjEPNClqNdHiVSLRItbV9g=/0x0:3997x2248/1200x800/filters:focal(1680x805:2318x1443)/cdn.vox-cdn.com/uploads/chorus_image/image/53917757/destiny_2_art_3997.0.jpg" width="100" height="100"></a></td>
+             <td><h3 style="color:white;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Destiny 2<br>
+               <p style="font-size:14px;font-weight: normal">Destiny 2 é um MMO de ação com um mundo único em evolução, que se pode jogar a qualquer hora e em qualquer lugar com os amigos, inteiramente de graça.</p></h3></td>
+           </tr>
+         </table>
+         <table>
+           <tr>
+             <td><a href="https://www.callofduty.com/br/pt/warzone" target="_blank"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/46b63d3c-ae67-464c-9a37-670829b2a157/ddw4eh3-e0ab2682-a822-4da9-b860-ce9cd4b8587b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQ2YjYzZDNjLWFlNjctNDY0Yy05YTM3LTY3MDgyOWIyYTE1N1wvZGR3NGVoMy1lMGFiMjY4Mi1hODIyLTRkYTktYjg2MC1jZTljZDRiODU4N2IucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Jyk51UDMLch0Tpi9Rs3mlna7mtYgAkuLYBkCcYNYaM0" width="100" height="100"></td>
+               <td><h3 style="color:white;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Call Of Duty Warzone <br>
+                <p style="font-size:14px;font-weight: normal">Verdansk e a Guerra Fria colidiram e lançaram os jogadores para um mundo novo e caótico.</p></h3></td>
+             </tr>
+           </table>
+           <table>
+             <tr>
+               <td><a href="https://clashroyale.com/pt/" target="_blank"><img src="https://pngimage.net/wp-content/uploads/2018/06/logo-do-clash-royale-png-6.png" width="100" height="100"></td>
+                 <td><h3 style="color:white;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Clash Royale<br>
+                   <p style="font-size:14px;font-weight: normal">Entre na arena! Os criadores do Clash of Clans trazem um novo jogo multijogador em tempo real com os Royales, seus personagens favoritos do Clash e muito, muito mais.<p></h3></td>
+               </tr>
+             </table>
+             <table>
+               <tr>
+                 <td><a href="https://steamcommunity.com/app/578080" target="_blank"><img src="https://xpic5.igvimg.com/group_c/1912/1407/542/edd02903-2f37-4819-9b34-fc799472ac25.png" width="100" height="100"></a></td>
+                   <td><h3 style="color:white;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">PLAYERUNKNOWN'S BATTLEGROUNDS<br>
+                  <p style="font-size:14px;font-weight: normal"> PLAYERUNKNOWN'S BATTLEGROUNDS é um jogo de tiro de batalha real que coloca 100 jogadores uns contra os outros em uma luta pela sobrevivência. Reúna suprimentos e engane seus oponentes para se tornar a última pessoa em pé.</p></h3></td>
+                 </tr>
+               </table>
+</div>
+</div>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class= "colunas">
+    <div class="card">
+      <h2 style="color:white; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Sobre nos</h2>
+      <div class="fakeimg1" style="height:100px;">
+</div>
+      <p style="font-weight: bold; color:white;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Valhalla's Elite brasil foi um grupo criado com a intenção de trazer mais comodidade e interação entre os players, assim você consegue criar uma lobby muito mais rapido,assim conhecendo novas amizades, seja qual for sua plataforma de jogo.</p>
+    </div>
+  </div>
+    <div class="card">
+      <h3 style="font-weight: bold; color:white;text-shadow: 1px 1px 2px black">Popular Post</h3>
+      <div class="colunas">
+        <p style="font-size:12px;font-weight: bold; color:white;text-shadow: 1px 1px 2px black"> <a href="https://draft5.gg/noticia/atualizacao-03-06-limitacoes-as-contas-sem-prime-e-adicao-de-matchmaking-sem-ranqueamento" target="_blank"><img src="https://static.draft5.gg/news/2021/06/03211901/Unranked-MM.png" width="150" height="100"></a><br>
+        [CS-GO]Atualização 03/06 - Limitações às contas sem prime e adição de matchmaking sem ranqueamento</p>
+    <p  <p style="font-size:12px;font-weight: bold; color:white;text-shadow: 1px 1px 2px black"> <a href="https://www.tecmundo.com.br/voxel/217863-destiny-2-tera-tres-dias-crossplay-teste-beta.htm" target="_blank"><img src="https://img.ibxk.com.br/2021/05/21/21140218419236.jpg?w=164&h=118&mode=crop&scale=both" width="150" height="100"></a> <br>
+  [DESTINY 2]  Destiny 2 terá três dias de crossplay em teste beta</p>
+  <p  <p style="font-size:12px;font-weight: bold; color:white;text-shadow: 1px 1px 2px black"> <a href="https://www.tecmundo.com.br/voxel/218467-pubg-anuncia-novidades-12-temporada.htm#:~:text=O%20icônico%20mapa%20de%20PUBG,recentes%20como%20Paramo%20e%20Haven.&text=Outros%20dois%20mapas%20serão%20lançados,2021%20e%20começo%20de%202022." target="_blank"><img src="https://img.ibxk.com.br/2021/06/01/01033522943014.jpg?w=704" width="150" height="100"></a> <br>
+[PUBG] PUBG anuncia as novidades da sua 12ª Temporada</p>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+</div>
+
+     <div class="colunas" style="width:100%;">
+
+  <h3 class="image" style="font-size:18px;text-align:top right;"> Valhalla's Elite Brasil ©</h3>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>
